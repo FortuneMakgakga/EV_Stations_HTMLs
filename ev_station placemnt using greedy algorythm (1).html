@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_454c80611c4cfd4c46891519459ab63d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_454c80611c4cfd4c46891519459ab63d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_454c80611c4cfd4c46891519459ab63d = L.map(
+                "map_454c80611c4cfd4c46891519459ab63d",
+                {
+                    center: [-1.94407, 30.06153],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1ce2e45fc04c650c2cac25a9acd3caa2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1ce2e45fc04c650c2cac25a9acd3caa2.addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var circle_marker_a8c6228e0d25e5a51546c26d423a9646 = L.circleMarker(
+                [-1.94407, 30.06153],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 76.377, "stroke": true, "weight": 3}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            circle_marker_a8c6228e0d25e5a51546c26d423a9646.bindTooltip(
+                `<div>
+                     Population: 763.77
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3801f0f52b180587f3b5669326440440 = L.circleMarker(
+                [-2.61983, 29.60483],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 89.39840000000001, "stroke": true, "weight": 3}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            circle_marker_3801f0f52b180587f3b5669326440440.bindTooltip(
+                `<div>
+                     Population: 893.984
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b0e457709d9dad45bc63dba788a96ca7 = L.circleMarker(
+                [-2.3717, 29.2058],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 85.1947, "stroke": true, "weight": 3}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            circle_marker_b0e457709d9dad45bc63dba788a96ca7.bindTooltip(
+                `<div>
+                     Population: 851.947
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_46998726131b6cb834f53f9ac8caf4da = L.circleMarker(
+                [-1.5675, 29.9062],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55.6246, "stroke": true, "weight": 3}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            circle_marker_46998726131b6cb834f53f9ac8caf4da.bindTooltip(
+                `<div>
+                     Population: 556.246
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_51761f4e665bcf5f1eebe7b26dc2652b = L.circleMarker(
+                [-1.75, 30.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 121.14590000000001, "stroke": true, "weight": 3}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            circle_marker_51761f4e665bcf5f1eebe7b26dc2652b.bindTooltip(
+                `<div>
+                     Population: 1211.459
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b13d22d554667475de23a36e9b4728f5 = L.marker(
+                [-2.4731413076275888, 28.9008995955054],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_ef52fdd91e7faa61ff365fc43bea439e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b13d22d554667475de23a36e9b4728f5.setIcon(icon_ef52fdd91e7faa61ff365fc43bea439e);
+        
+    
+        var popup_b7d55ca6f373518bd2df30ac21755f13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7e5c87e36a57304bea73c760ee4af32 = $(`<div id="html_f7e5c87e36a57304bea73c760ee4af32" style="width: 100.0%; height: 100.0%;">Mantis Kivu Marina Bay Hotel (Under-Construction)</div>`)[0];
+                popup_b7d55ca6f373518bd2df30ac21755f13.setContent(html_f7e5c87e36a57304bea73c760ee4af32);
+            
+        
+
+        marker_b13d22d554667475de23a36e9b4728f5.bindPopup(popup_b7d55ca6f373518bd2df30ac21755f13)
+        ;
+
+        
+    
+    
+            var marker_d97ec7adcdf94fa9bfbf02339cc1cf41 = L.marker(
+                [-2.4725875, 29.580031],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_1f0641091921f6abc9d12fc2570c4385 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d97ec7adcdf94fa9bfbf02339cc1cf41.setIcon(icon_1f0641091921f6abc9d12fc2570c4385);
+        
+    
+        var popup_47c0fbb912cb4ca8df3a0e7a00e3a0e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92a554be9480202f544a8c4c57c79fe4 = $(`<div id="html_92a554be9480202f544a8c4c57c79fe4" style="width: 100.0%; height: 100.0%;">Kitabi Eco-Center (Under-Construction)</div>`)[0];
+                popup_47c0fbb912cb4ca8df3a0e7a00e3a0e9.setContent(html_92a554be9480202f544a8c4c57c79fe4);
+            
+        
+
+        marker_d97ec7adcdf94fa9bfbf02339cc1cf41.bindPopup(popup_47c0fbb912cb4ca8df3a0e7a00e3a0e9)
+        ;
+
+        
+    
+    
+            var marker_4736bb3622b64efd17b0bb8bd4ba8a1d = L.marker(
+                [-2.0603776, 29.348604],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_f299812ce0b970bad53d63d77f7aa242 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4736bb3622b64efd17b0bb8bd4ba8a1d.setIcon(icon_f299812ce0b970bad53d63d77f7aa242);
+        
+    
+        var popup_d9f5a6d5b95e2b31a58e3a05d494cdce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baa5a302f935dabcfefd46266a20a0e8 = $(`<div id="html_baa5a302f935dabcfefd46266a20a0e8" style="width: 100.0%; height: 100.0%;">Cleo Lake Kivu Hotel (Under-Construction)</div>`)[0];
+                popup_d9f5a6d5b95e2b31a58e3a05d494cdce.setContent(html_baa5a302f935dabcfefd46266a20a0e8);
+            
+        
+
+        marker_4736bb3622b64efd17b0bb8bd4ba8a1d.bindPopup(popup_d9f5a6d5b95e2b31a58e3a05d494cdce)
+        ;
+
+        
+    
+    
+            var marker_73904bc8d852dcc90b682adc2903d13c = L.marker(
+                [-2.6053426, 29.7401547],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_8c61c5454b24b0fd6875b8a2a0eb832f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_73904bc8d852dcc90b682adc2903d13c.setIcon(icon_8c61c5454b24b0fd6875b8a2a0eb832f);
+        
+    
+        var popup_8039b55d452e56b5b0264ea0ca266acb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e35ad12f6330ee85c6294ca7bd34b480 = $(`<div id="html_e35ad12f6330ee85c6294ca7bd34b480" style="width: 100.0%; height: 100.0%;">Chinese Restaurant - Good to Back (Under-Construction)</div>`)[0];
+                popup_8039b55d452e56b5b0264ea0ca266acb.setContent(html_e35ad12f6330ee85c6294ca7bd34b480);
+            
+        
+
+        marker_73904bc8d852dcc90b682adc2903d13c.bindPopup(popup_8039b55d452e56b5b0264ea0ca266acb)
+        ;
+
+        
+    
+    
+            var marker_b5b06b18fffe225507d119806161a20a = L.marker(
+                [-2.3694642234287357, 29.77704459743813],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_6587d5299d080fc4288d2402a3e3aa06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b5b06b18fffe225507d119806161a20a.setIcon(icon_6587d5299d080fc4288d2402a3e3aa06);
+        
+    
+        var popup_44f64b967fda196ee0ab65220b800963 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49b5aa2ea53577c7ae2be8ef60400fdb = $(`<div id="html_49b5aa2ea53577c7ae2be8ef60400fdb" style="width: 100.0%; height: 100.0%;">Stafford Coffee (Under-Construction)</div>`)[0];
+                popup_44f64b967fda196ee0ab65220b800963.setContent(html_49b5aa2ea53577c7ae2be8ef60400fdb);
+            
+        
+
+        marker_b5b06b18fffe225507d119806161a20a.bindPopup(popup_44f64b967fda196ee0ab65220b800963)
+        ;
+
+        
+    
+    
+            var marker_37fc2e7d2b1ce21f6f720c390033a91b = L.marker(
+                [-2.2083926, 30.2433128],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_1b5dea4c6c41468da4c4e6f36f2df220 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_37fc2e7d2b1ce21f6f720c390033a91b.setIcon(icon_1b5dea4c6c41468da4c4e6f36f2df220);
+        
+    
+        var popup_966fed44bb6e2beed9dba29c813b79f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efc86319ca733458cf6d095e663ad8b0 = $(`<div id="html_efc86319ca733458cf6d095e663ad8b0" style="width: 100.0%; height: 100.0%;">RICA - Rwanda Institute for Conservation Agriculture (Under-Construction)</div>`)[0];
+                popup_966fed44bb6e2beed9dba29c813b79f4.setContent(html_efc86319ca733458cf6d095e663ad8b0);
+            
+        
+
+        marker_37fc2e7d2b1ce21f6f720c390033a91b.bindPopup(popup_966fed44bb6e2beed9dba29c813b79f4)
+        ;
+
+        
+    
+    
+            var marker_2f4c1e7236bd7de9222a190f5f9d2d11 = L.marker(
+                [-2.274327310414398, 30.671318995504837],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_33dcb73cc73a5fdedb4ede191868cf82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2f4c1e7236bd7de9222a190f5f9d2d11.setIcon(icon_33dcb73cc73a5fdedb4ede191868cf82);
+        
+    
+        var popup_a47ccf080d44166c9f28eee65b745df8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a7fd16b53e83291c70d653fc92a3f7a = $(`<div id="html_8a7fd16b53e83291c70d653fc92a3f7a" style="width: 100.0%; height: 100.0%;">Rubis Kirehe Service Station (Under-Construction)</div>`)[0];
+                popup_a47ccf080d44166c9f28eee65b745df8.setContent(html_8a7fd16b53e83291c70d653fc92a3f7a);
+            
+        
+
+        marker_2f4c1e7236bd7de9222a190f5f9d2d11.bindPopup(popup_a47ccf080d44166c9f28eee65b745df8)
+        ;
+
+        
+    
+    
+            var marker_b79c766b98f0d822974740653cf231e1 = L.marker(
+                [-1.9305086569239576, 30.677546533567863],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_aa12d1053e7e43b485e17ea173d2b894 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b79c766b98f0d822974740653cf231e1.setIcon(icon_aa12d1053e7e43b485e17ea173d2b894);
+        
+    
+        var popup_6c2eeaaf827c0e4d94cd5eaaad15add4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14e922628337ad070a81003942123304 = $(`<div id="html_14e922628337ad070a81003942123304" style="width: 100.0%; height: 100.0%;">Akagera Rhino Lodge (Under-Construction)</div>`)[0];
+                popup_6c2eeaaf827c0e4d94cd5eaaad15add4.setContent(html_14e922628337ad070a81003942123304);
+            
+        
+
+        marker_b79c766b98f0d822974740653cf231e1.bindPopup(popup_6c2eeaaf827c0e4d94cd5eaaad15add4)
+        ;
+
+        
+    
+    
+            var marker_b544c8a5da231022d0f869d555bf28f2 = L.marker(
+                [-1.8793158676251265, 30.70405176666733],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_87e1fd34f03018228e553e5230182147 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b544c8a5da231022d0f869d555bf28f2.setIcon(icon_87e1fd34f03018228e553e5230182147);
+        
+    
+        var popup_0649a51eb7fff2445bc192ca8fc1365e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ade47367676fb46b3239464b81bd9442 = $(`<div id="html_ade47367676fb46b3239464b81bd9442" style="width: 100.0%; height: 100.0%;">Ruzizi Tented Lodge (Under-Construction)</div>`)[0];
+                popup_0649a51eb7fff2445bc192ca8fc1365e.setContent(html_ade47367676fb46b3239464b81bd9442);
+            
+        
+
+        marker_b544c8a5da231022d0f869d555bf28f2.bindPopup(popup_0649a51eb7fff2445bc192ca8fc1365e)
+        ;
+
+        
+    
+    
+            var marker_d477faf0071d15600ad7b472086d5b8f = L.marker(
+                [-1.8746335978950168, 30.71436181084904],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_d9499597d84123e8c1eb5298f835acdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d477faf0071d15600ad7b472086d5b8f.setIcon(icon_d9499597d84123e8c1eb5298f835acdd);
+        
+    
+        var popup_9c0ec7783c55c69ea25bd9d9713ef272 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_007534b5d8e17d80e9f4af57c8eb918e = $(`<div id="html_007534b5d8e17d80e9f4af57c8eb918e" style="width: 100.0%; height: 100.0%;">Akagera Game Lodge (Under-Construction)</div>`)[0];
+                popup_9c0ec7783c55c69ea25bd9d9713ef272.setContent(html_007534b5d8e17d80e9f4af57c8eb918e);
+            
+        
+
+        marker_d477faf0071d15600ad7b472086d5b8f.bindPopup(popup_9c0ec7783c55c69ea25bd9d9713ef272)
+        ;
+
+        
+    
+    
+            var marker_96ada7dc6d10ef55a76406adc43508bf = L.marker(
+                [-1.5018652, 29.6341794],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_b3a04b52f4f26791bb0fd7d14a7cac5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_96ada7dc6d10ef55a76406adc43508bf.setIcon(icon_b3a04b52f4f26791bb0fd7d14a7cac5a);
+        
+    
+        var popup_c903acb03447ad30fcf7c2204e4051ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3ee139d8680767b9c9b8e8162ddc7a8 = $(`<div id="html_f3ee139d8680767b9c9b8e8162ddc7a8" style="width: 100.0%; height: 100.0%;">Sina Gerard/Ese Urwibutso Headquarters (Nyirangarama) (Under-Construction)</div>`)[0];
+                popup_c903acb03447ad30fcf7c2204e4051ec.setContent(html_f3ee139d8680767b9c9b8e8162ddc7a8);
+            
+        
+
+        marker_96ada7dc6d10ef55a76406adc43508bf.bindPopup(popup_c903acb03447ad30fcf7c2204e4051ec)
+        ;
+
+        
+    
+    
+            var marker_a325d6e09b1f860a07cc0f907a0bf9bb = L.marker(
+                [-1.548427424670963, 30.0594078949932],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_cfd9b19255ff279227bfdf444f9d636a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a325d6e09b1f860a07cc0f907a0bf9bb.setIcon(icon_cfd9b19255ff279227bfdf444f9d636a);
+        
+    
+        var popup_dab05611027839a5f3a36dee5261a523 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51fe4963da21a58f0678bca80361ab5f = $(`<div id="html_51fe4963da21a58f0678bca80361ab5f" style="width: 100.0%; height: 100.0%;">Gatuna Border Post Rwanda (Under-Construction)</div>`)[0];
+                popup_dab05611027839a5f3a36dee5261a523.setContent(html_51fe4963da21a58f0678bca80361ab5f);
+            
+        
+
+        marker_a325d6e09b1f860a07cc0f907a0bf9bb.bindPopup(popup_dab05611027839a5f3a36dee5261a523)
+        ;
+
+        
+    
+    
+            var marker_f2b1d9853a36fa600e907ee55a7cd48b = L.marker(
+                [-1.3096413196461656, 30.321702970770232],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_0600602470baa0c885614943703321b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f2b1d9853a36fa600e907ee55a7cd48b.setIcon(icon_0600602470baa0c885614943703321b2);
+        
+    
+        var popup_c4074267480bada0a5c91d2cfdbde13a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0b083df559aeb190b5bcbb059bb85eb = $(`<div id="html_f0b083df559aeb190b5bcbb059bb85eb" style="width: 100.0%; height: 100.0%;">Mantis Epic Hotel & Suites (Under-Construction)</div>`)[0];
+                popup_c4074267480bada0a5c91d2cfdbde13a.setContent(html_f0b083df559aeb190b5bcbb059bb85eb);
+            
+        
+
+        marker_f2b1d9853a36fa600e907ee55a7cd48b.bindPopup(popup_c4074267480bada0a5c91d2cfdbde13a)
+        ;
+
+        
+    
+    
+            var marker_7ec9cae3b65442ea672603fb38a61de9 = L.marker(
+                [-1.5082627625009437, 29.64067226653422],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_7238e3581d5f5121485697513855ce15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7ec9cae3b65442ea672603fb38a61de9.setIcon(icon_7238e3581d5f5121485697513855ce15);
+        
+    
+        var popup_c04e18174904c7a3a3cdc52a134e9636 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21a28fa0801776259fcd640f0f40d00a = $(`<div id="html_21a28fa0801776259fcd640f0f40d00a" style="width: 100.0%; height: 100.0%;">Kabisa Charging Station (Operational)</div>`)[0];
+                popup_c04e18174904c7a3a3cdc52a134e9636.setContent(html_21a28fa0801776259fcd640f0f40d00a);
+            
+        
+
+        marker_7ec9cae3b65442ea672603fb38a61de9.bindPopup(popup_c04e18174904c7a3a3cdc52a134e9636)
+        ;
+
+        
+    
+    
+            var marker_0b367ab44e7c8da989e2bec028c45a51 = L.marker(
+                [-1.7028087404291148, 29.26242090899412],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_95f46b65a21822ec1d877d28c7fd2099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b367ab44e7c8da989e2bec028c45a51.setIcon(icon_95f46b65a21822ec1d877d28c7fd2099);
+        
+    
+        var popup_d5c5cff276e53eb60a5b6818ccb24004 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12479b8ca78dc64d22302eada3ca334f = $(`<div id="html_12479b8ca78dc64d22302eada3ca334f" style="width: 100.0%; height: 100.0%;">Rubavu SP Station (Operational)</div>`)[0];
+                popup_d5c5cff276e53eb60a5b6818ccb24004.setContent(html_12479b8ca78dc64d22302eada3ca334f);
+            
+        
+
+        marker_0b367ab44e7c8da989e2bec028c45a51.bindPopup(popup_d5c5cff276e53eb60a5b6818ccb24004)
+        ;
+
+        
+    
+    
+            var marker_a8fd088fe1b833bda158102f0b1dab63 = L.marker(
+                [-1.4306087142239976, 29.56380176666631],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_bbd6db0a69fc634b56c222564291a8d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a8fd088fe1b833bda158102f0b1dab63.setIcon(icon_bbd6db0a69fc634b56c222564291a8d9);
+        
+    
+        var popup_eb06dda0a36083bb489eef55a130be67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dae6e3665c6a7cc17abcf00e6c8e82e = $(`<div id="html_3dae6e3665c6a7cc17abcf00e6c8e82e" style="width: 100.0%; height: 100.0%;">Kinigi - Dian Fossy Campus (Operational)</div>`)[0];
+                popup_eb06dda0a36083bb489eef55a130be67.setContent(html_3dae6e3665c6a7cc17abcf00e6c8e82e);
+            
+        
+
+        marker_a8fd088fe1b833bda158102f0b1dab63.bindPopup(popup_eb06dda0a36083bb489eef55a130be67)
+        ;
+
+        
+    
+    
+            var marker_cb6678acde13af3e2e2f623adaecef11 = L.marker(
+                [-1.85333415, 30.40787511828718],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_0bdd0d4158f943aa01448a9a098a16e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb6678acde13af3e2e2f623adaecef11.setIcon(icon_0bdd0d4158f943aa01448a9a098a16e7);
+        
+    
+        var popup_69e647458d618332d77c22566478e923 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65c21269cc9ec4474e8cebffac14c9c3 = $(`<div id="html_65c21269cc9ec4474e8cebffac14c9c3" style="width: 100.0%; height: 100.0%;">UMVA Muhazi (Operational)</div>`)[0];
+                popup_69e647458d618332d77c22566478e923.setContent(html_65c21269cc9ec4474e8cebffac14c9c3);
+            
+        
+
+        marker_cb6678acde13af3e2e2f623adaecef11.bindPopup(popup_69e647458d618332d77c22566478e923)
+        ;
+
+        
+    
+    
+            var marker_fb5a07992aa7995e4c344d70b650dcd4 = L.marker(
+                [-1.8935961842513056, 30.47025559144863],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_c45eb33cc45ef9a22ffd4f44497ebd2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fb5a07992aa7995e4c344d70b650dcd4.setIcon(icon_c45eb33cc45ef9a22ffd4f44497ebd2e);
+        
+    
+        var popup_9fe454309a2b2ee6b7098c90655a54f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3de7912977eefef81c2ebb459b0e8c1 = $(`<div id="html_d3de7912977eefef81c2ebb459b0e8c1" style="width: 100.0%; height: 100.0%;">Kayonza - IMIGONGO ART CENTER and Cafe Quick Food (Operational)</div>`)[0];
+                popup_9fe454309a2b2ee6b7098c90655a54f5.setContent(html_d3de7912977eefef81c2ebb459b0e8c1);
+            
+        
+
+        marker_fb5a07992aa7995e4c344d70b650dcd4.bindPopup(popup_9fe454309a2b2ee6b7098c90655a54f5)
+        ;
+
+        
+    
+    
+            var marker_9be6815adf7c5ac252ba966417b8e388 = L.marker(
+                [-2.0448199, 29.8301924],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_c8f25169bdac0420bd2e186ebe9de302 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9be6815adf7c5ac252ba966417b8e388.setIcon(icon_c8f25169bdac0420bd2e186ebe9de302);
+        
+    
+        var popup_176f5d4e3b5f11dfb2fce2624a111c00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f21e95cf4c9642688867bd3c38927482 = $(`<div id="html_f21e95cf4c9642688867bd3c38927482" style="width: 100.0%; height: 100.0%;">Muhanga - Stafford & Family Co (Operational)</div>`)[0];
+                popup_176f5d4e3b5f11dfb2fce2624a111c00.setContent(html_f21e95cf4c9642688867bd3c38927482);
+            
+        
+
+        marker_9be6815adf7c5ac252ba966417b8e388.bindPopup(popup_176f5d4e3b5f11dfb2fce2624a111c00)
+        ;
+
+        
+    
+    
+            var marker_9e67242ec826a430a6b7a584c1605ae1 = L.marker(
+                [-1.9124091, 30.0815364],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_281ab5586cfff86c49d924a4274f606a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9e67242ec826a430a6b7a584c1605ae1.setIcon(icon_281ab5586cfff86c49d924a4274f606a);
+        
+    
+        var popup_6c6d5c13bd9722e76befb721e560c8fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adf559581175192f507334b6613b6776 = $(`<div id="html_adf559581175192f507334b6613b6776" style="width: 100.0%; height: 100.0%;">Shyrongi - The Stop (Operational)</div>`)[0];
+                popup_6c6d5c13bd9722e76befb721e560c8fd.setContent(html_adf559581175192f507334b6613b6776);
+            
+        
+
+        marker_9e67242ec826a430a6b7a584c1605ae1.bindPopup(popup_6c6d5c13bd9722e76befb721e560c8fd)
+        ;
+
+        
+    
+    
+            var marker_a95079c45b6b102ae2b3435f4cc2400c = L.marker(
+                [-1.88167630625165, 30.089045998703103],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_4bf6c765dc94b5928b76d4e1555fffc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a95079c45b6b102ae2b3435f4cc2400c.setIcon(icon_4bf6c765dc94b5928b76d4e1555fffc5);
+        
+    
+        var popup_b272465927a195db14e9014b7b752339 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_865dd696b02512dbc3c2b5df12448f67 = $(`<div id="html_865dd696b02512dbc3c2b5df12448f67" style="width: 100.0%; height: 100.0%;">Kabisa EV Garage (Operational)</div>`)[0];
+                popup_b272465927a195db14e9014b7b752339.setContent(html_865dd696b02512dbc3c2b5df12448f67);
+            
+        
+
+        marker_a95079c45b6b102ae2b3435f4cc2400c.bindPopup(popup_b272465927a195db14e9014b7b752339)
+        ;
+
+        
+    
+    
+            var marker_322304b39247eb2ab6425cc13b54c0f2 = L.marker(
+                [-1.9496678, 30.058197],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_f8da0486e7a0722482253966e24dc062 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_322304b39247eb2ab6425cc13b54c0f2.setIcon(icon_f8da0486e7a0722482253966e24dc062);
+        
+    
+        var popup_48d97f148945157406eda23fd6a44552 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f93db43fd39ae9c3d70d71c136fc1a08 = $(`<div id="html_f93db43fd39ae9c3d70d71c136fc1a08" style="width: 100.0%; height: 100.0%;">Kigali - Norrsken House Kigali (Operational)</div>`)[0];
+                popup_48d97f148945157406eda23fd6a44552.setContent(html_f93db43fd39ae9c3d70d71c136fc1a08);
+            
+        
+
+        marker_322304b39247eb2ab6425cc13b54c0f2.bindPopup(popup_48d97f148945157406eda23fd6a44552)
+        ;
+
+        
+    
+    
+            var marker_81423f49ea3e6e63f44ae195628f6c75 = L.marker(
+                [-1.9628324599154152, 30.07018974103063],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_578d64deb9ce1f564190648bd305fa5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_81423f49ea3e6e63f44ae195628f6c75.setIcon(icon_578d64deb9ce1f564190648bd305fa5c);
+        
+    
+        var popup_e23c0de311f9060a1a82ca5953601714 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61ca03b7638360bb75187f41ec90a836 = $(`<div id="html_61ca03b7638360bb75187f41ec90a836" style="width: 100.0%; height: 100.0%;">SP Rugunga (Operational)</div>`)[0];
+                popup_e23c0de311f9060a1a82ca5953601714.setContent(html_61ca03b7638360bb75187f41ec90a836);
+            
+        
+
+        marker_81423f49ea3e6e63f44ae195628f6c75.bindPopup(popup_e23c0de311f9060a1a82ca5953601714)
+        ;
+
+        
+    
+    
+            var marker_4f1577d55d8a5ed11e8b72a8ccc975b3 = L.marker(
+                [-1.9593398, 30.1168868],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_6a3c9954e06618747b2e4d910dbb2053 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4f1577d55d8a5ed11e8b72a8ccc975b3.setIcon(icon_6a3c9954e06618747b2e4d910dbb2053);
+        
+    
+        var popup_59140914b473cd549035d109c59323d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5520b60ce534bc773d2962ffeb3e0a36 = $(`<div id="html_5520b60ce534bc773d2962ffeb3e0a36" style="width: 100.0%; height: 100.0%;">Mundi Centre (Operational)</div>`)[0];
+                popup_59140914b473cd549035d109c59323d6.setContent(html_5520b60ce534bc773d2962ffeb3e0a36);
+            
+        
+
+        marker_4f1577d55d8a5ed11e8b72a8ccc975b3.bindPopup(popup_59140914b473cd549035d109c59323d6)
+        ;
+
+        
+    
+    
+            var marker_313240f9cb464b5a3e6cff236df6fc36 = L.marker(
+                [-1.9274993, 30.098407442277228],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_e0bc3a7f453bd728a5bcfae4220cbd55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_313240f9cb464b5a3e6cff236df6fc36.setIcon(icon_e0bc3a7f453bd728a5bcfae4220cbd55);
+        
+    
+        var popup_5bc151650f218eccec34b43af5e1c124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_596cfc2c230033a9c1bcf6e023230a22 = $(`<div id="html_596cfc2c230033a9c1bcf6e023230a22" style="width: 100.0%; height: 100.0%;">Kab-Izi SuperCharger - Century Park (Operational)</div>`)[0];
+                popup_5bc151650f218eccec34b43af5e1c124.setContent(html_596cfc2c230033a9c1bcf6e023230a22);
+            
+        
+
+        marker_313240f9cb464b5a3e6cff236df6fc36.bindPopup(popup_5bc151650f218eccec34b43af5e1c124)
+        ;
+
+        
+    
+    
+            var marker_eddfeba72f3fd2533205498e3b5a5754 = L.marker(
+                [-1.97884070439084, 30.13454313361258],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_440af51c27c2f8cb8c6c2a6339177992 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eddfeba72f3fd2533205498e3b5a5754.setIcon(icon_440af51c27c2f8cb8c6c2a6339177992);
+        
+    
+        var popup_2573a07e156f53a90b0553ee03c024ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_992171cd97eefc558b4674ce81d7307c = $(`<div id="html_992171cd97eefc558b4674ce81d7307c" style="width: 100.0%; height: 100.0%;">Kanombe SP (Operational)</div>`)[0];
+                popup_2573a07e156f53a90b0553ee03c024ff.setContent(html_992171cd97eefc558b4674ce81d7307c);
+            
+        
+
+        marker_eddfeba72f3fd2533205498e3b5a5754.bindPopup(popup_2573a07e156f53a90b0553ee03c024ff)
+        ;
+
+        
+    
+    
+            var marker_0b150de5dcab2f1fee50d6c22ffdbbc2 = L.marker(
+                [-1.75, 30.5],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_d354ee68320302f7ac9f3d500b649c7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b150de5dcab2f1fee50d6c22ffdbbc2.setIcon(icon_d354ee68320302f7ac9f3d500b649c7a);
+        
+    
+        var popup_4384ddec0f2719e050d56ad9fbfccb69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2402ae8404b2411d001caf6fdd28807 = $(`<div id="html_c2402ae8404b2411d001caf6fdd28807" style="width: 100.0%; height: 100.0%;">New Station (Score: 363.44)</div>`)[0];
+                popup_4384ddec0f2719e050d56ad9fbfccb69.setContent(html_c2402ae8404b2411d001caf6fdd28807);
+            
+        
+
+        marker_0b150de5dcab2f1fee50d6c22ffdbbc2.bindPopup(popup_4384ddec0f2719e050d56ad9fbfccb69)
+        ;
+
+        
+    
+    
+            var marker_03623b631f8054c66a1fe60ed36f3156 = L.marker(
+                [-2.61983, 29.60483],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_dcfcab5b965ac4ae10ac2924bfcb0eb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03623b631f8054c66a1fe60ed36f3156.setIcon(icon_dcfcab5b965ac4ae10ac2924bfcb0eb0);
+        
+    
+        var popup_c7aa85943123ac582f384cb4bab78a57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34905aec150e542aa48689e7ef81a473 = $(`<div id="html_34905aec150e542aa48689e7ef81a473" style="width: 100.0%; height: 100.0%;">New Station (Score: 268.20)</div>`)[0];
+                popup_c7aa85943123ac582f384cb4bab78a57.setContent(html_34905aec150e542aa48689e7ef81a473);
+            
+        
+
+        marker_03623b631f8054c66a1fe60ed36f3156.bindPopup(popup_c7aa85943123ac582f384cb4bab78a57)
+        ;
+
+        
+    
+    
+            var marker_be7d932b94251f3e299ca8428e01954f = L.marker(
+                [-2.3717, 29.2058],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_9cb53f65a7da9b185f90689dc05ecb12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be7d932b94251f3e299ca8428e01954f.setIcon(icon_9cb53f65a7da9b185f90689dc05ecb12);
+        
+    
+        var popup_bba87c511b1eb1457337ed00cec7b795 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2886a6316dd3ddac2949ee17a92dbe54 = $(`<div id="html_2886a6316dd3ddac2949ee17a92dbe54" style="width: 100.0%; height: 100.0%;">New Station (Score: 255.58)</div>`)[0];
+                popup_bba87c511b1eb1457337ed00cec7b795.setContent(html_2886a6316dd3ddac2949ee17a92dbe54);
+            
+        
+
+        marker_be7d932b94251f3e299ca8428e01954f.bindPopup(popup_bba87c511b1eb1457337ed00cec7b795)
+        ;
+
+        
+    
+    
+            var marker_dcaf12c70a33137e3ed531d6b2bb90d3 = L.marker(
+                [-1.5675, 29.9062],
+                {}
+            ).addTo(map_454c80611c4cfd4c46891519459ab63d);
+        
+    
+            var icon_91503b9d5ea3cd3259db16e39227487c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dcaf12c70a33137e3ed531d6b2bb90d3.setIcon(icon_91503b9d5ea3cd3259db16e39227487c);
+        
+    
+        var popup_f50a4f2aee92336e1b537d8f8dcd4623 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0d64ba6d9060e02cb27f42b7553fb7a = $(`<div id="html_d0d64ba6d9060e02cb27f42b7553fb7a" style="width: 100.0%; height: 100.0%;">New Station (Score: 166.87)</div>`)[0];
+                popup_f50a4f2aee92336e1b537d8f8dcd4623.setContent(html_d0d64ba6d9060e02cb27f42b7553fb7a);
+            
+        
+
+        marker_dcaf12c70a33137e3ed531d6b2bb90d3.bindPopup(popup_f50a4f2aee92336e1b537d8f8dcd4623)
+        ;
+
+        
+    
+</script>
+</html>
